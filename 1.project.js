@@ -65,11 +65,18 @@ if (!PJS.isCheckout) {
    * @module optimizely/returning-visitors-segmentation.module
    */
 
-  /**
-   * Track Add to Cart Events
-   * @module add-to-cart-tracking.module
-   */
-
+  if (PJS.mode === 'qa') {
+     /**
+     * Track Add to Cart Events
+     * @module add-to-cart-tracking-WIP.module
+     */
+    
+  } else {
+    /**
+     * Track Add to Cart Events
+     * @module add-to-cart-tracking.module
+     */
+  }
   /**
    * Page/product specific ATC
    * @module individual_add_to_cart.module
